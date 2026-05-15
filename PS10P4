@@ -1,0 +1,23 @@
+# Armando Contrereas 5/10/2026
+# ps10P4
+def BowlingFormula(S1, S2, S3, Handicap):
+
+    AvgScore = (S1 + S2 + S3) / 3
+    AvgWHandicap = AvgScore + Handicap
+
+    return AvgScore, AvgWHandicap
+
+# Input
+lname = input("Enter Last Name: ")
+S1 = float(input("Enter Game Score 1: "))
+S2 = float(input("Enter Game Score 2: "))
+S3 = float(input("Enter Game Score 3: "))
+Handicap = float(input("Enter Handicap: "))
+
+# Process
+AvgScore, AvgWHandicap = BowlingFormula(S1, S2, S3, Handicap)
+
+# Output
+print("\nBowler Last Name:", lname)
+print("Average Score:", format(AvgScore, ".2f"))
+print("Average Score with Handicap:", format(AvgWHandicap, ".2f"))
