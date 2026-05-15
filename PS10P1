@@ -1,0 +1,22 @@
+# Armando Contrereas 5/10/2026
+# ps10P1
+def Disc(Price, DiscRate):
+
+    DiscAmt = Price * DiscRate
+    DiscPrice = Price - DiscAmt
+
+    return DiscAmt, DiscPrice
+
+# Input
+Quant = float(input("Enter quantity: "))
+Price = float(input("Enter price: "))
+DiscRate = float(input("Enter discount rate (.10 = 10%): "))
+
+# Process
+DiscAmt, DiscPrice = Disc(Price, DiscRate)
+
+# Output
+print("\nQuantity:", Quant)
+print("Price: $", format(Price, ".2f"))
+print("Discount Amount: $", format(DiscAmt, ".2f"))
+print("Discounted Price: $", format(DiscPrice, ".2f"))
