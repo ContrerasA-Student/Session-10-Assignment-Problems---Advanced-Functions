@@ -1,0 +1,23 @@
+# Armando Contrereas 5/10/2026
+# ps10P5
+#Start
+Total = 0
+Tax = 0
+def compute_bill(Quant, UnitPrice):
+    
+    global Total
+    global Tax
+    
+    Total = Quant* UnitPrice
+    Tax = Total * 0.07
+
+# Input
+Quant = float(input("Enter Quantity: "))
+UnitPrice = float(input("Enter Unit Price: "))
+
+# Process
+compute_bill(Quant, UnitPrice)
+
+# Output
+print("\nTotal: $", format(Total, ".2f"))
+print("Tax (7%): $", format(Tax, ".2f"))
