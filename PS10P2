@@ -1,0 +1,20 @@
+# Armando Contrereas 5/10/2026
+# ps10P2
+def ScoresFormula(S1, S2, S3):
+    TotalPTS = S1 + S2 + S3
+    AvgScore= TotalPTS / 3
+    return TotalPTS, AvgScore
+    
+# Input
+lname = input("Enter last name: ")
+S1 = float(input("Enter exam score 1: "))
+S2 = float(input("Enter exam score 2: "))
+S3 = float(input("Enter exam score 3: "))
+
+# Process
+TotalPTS, AvgScore = ScoresFormula(S1, S2, S3)
+
+# Output
+print("\nStudent Last Name: ", lname)
+print("Total Points: ", format(TotalPTS, ".2f"))
+print("Average Exam Score: ", format(AvgScore, ".2f"))
