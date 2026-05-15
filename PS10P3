@@ -1,0 +1,25 @@
+# Armando Contrereas 5/10/2026
+# ps10P3
+def SalesFormula(Sales):
+
+    if Sales > 100000:
+        Commission = 0.10
+    else:
+        Commission = 0.05
+
+    CommissionTotal = Sales * Commission
+    NextYearTarget = Sales * 0.05
+    
+    return CommissionTotal, NextYearTarget
+
+# Input
+lname = input("Enter salesperson last name: ")
+Sales = float(input("Enter sales amount: "))
+
+# Process
+CommissionTotal, NextYearTarget = SalesFormula(Sales)
+
+# Output
+print("\nSalesperson:", lname)
+print("Commission: $", format(CommissionTotal, ".2f"))
+print("Next Year's Target: $", format(NextYearTarget, ".2f"))
