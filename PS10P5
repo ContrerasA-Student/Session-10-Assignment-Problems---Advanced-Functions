@@ -3,11 +3,11 @@
 #Start
 Total = 0
 Tax = 0
-def compute_bill(Quant, UnitPrice):
-    
+def TotalPrice(Quant, UnitPrice):
+
     global Total
     global Tax
-    
+
     Total = Quant* UnitPrice
     Tax = Total * 0.07
 
@@ -16,7 +16,7 @@ Quant = float(input("Enter Quantity: "))
 UnitPrice = float(input("Enter Unit Price: "))
 
 # Process
-compute_bill(Quant, UnitPrice)
+TotalPrice(Quant, UnitPrice)
 
 # Output
 print("\nTotal: $", format(Total, ".2f"))
